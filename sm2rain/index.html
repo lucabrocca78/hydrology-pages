@@ -69,7 +69,6 @@ font-family:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;c
 <p><strong>New in 2025: SM2RAIN-Dual.</strong> A global rainfall product obtained by applying SM2RAIN to both SMAP and ASCAT soil moisture, then fusing the two estimates. Daily, 10 km, 2015 to 2022, openly available on <a href="https://zenodo.org/records/15567657">Zenodo</a>.</p>
 </div>
 </section>
-<figure class="hn-figimg" style="margin:2rem 0 0"><a href="https://www.linkedin.com/pulse/do-you-know-sm2rain-read-here-its-short-story-luca-brocca"><img class="hn-img" src="https://hydrology.irpi.cnr.it/wp-content/uploads/2021/02/sm2rain_image.jpg" data-fallback="https://hydrology.irpi.cnr.it/wp-content/uploads/2021/02/sm2rain_image.jpg|http://hydrology.irpi.cnr.it/wp-content/uploads/2021/02/sm2rain_image.jpg" alt="SM2RAIN: from satellite soil moisture to rainfall" width="504" height="232" style="aspect-ratio:504/232" loading="lazy" /></a></figure>
 <h2>Download the datasets</h2>
 <p>All SM2RAIN rainfall products are free to use. Please let us know if you use them: knowing our users helps us improve the data.</p>
 <div class="hn-scroll"><table>
@@ -105,7 +104,6 @@ font-family:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;c
 <div><h3>Independent benchmarks</h3><p>Tested on 18,428 catchments worldwide against 23 other datasets, GPM+SM2RAIN performs strongly among satellite-only rainfall (<a href="https://doi.org/10.5194/hess-30-3399-2026">Abbas et al., 2026</a>).</p></div>
 <div><h3>Irrigation</h3><p>Applied where farmers irrigate, the same idea reveals water that did not come from rain. This is the basis of our <a href="../irrigation/">irrigation work</a>.</p></div>
 </div>
-<figure class="hn-figimg" style="margin:2rem 0 0"><img class="hn-img" src="https://hydrology.irpi.cnr.it/wp-content/uploads/2016/08/SM2RAIN3-1024x384.jpg" data-fallback="https://hydrology.irpi.cnr.it/wp-content/uploads/2016/08/SM2RAIN3-1024x384.jpg|http://hydrology.irpi.cnr.it/wp-content/uploads/2016/08/SM2RAIN3-1024x384.jpg" alt="Left: global correlation maps of SM2RAIN-ASCAT against GPCC, first and latest version. Right: daily rainfall in central Italy from GPM merged with SM2RAIN-ASCAT." width="1024" height="384" style="aspect-ratio:1024/384" loading="lazy" /><figcaption class="hn-cap" style="margin-top:.5rem">Left: correlation of 5-day rainfall with the GPCC benchmark, first version (top) and improved SM2RAIN-ASCAT (bottom). Right: merging GPM and SM2RAIN-ASCAT in central Italy reaches a correlation of 0.874.</figcaption></figure>
 <h2>Recent papers</h2>
 <ol class="hn-pubs" reversed>
 <li>Abbas, A., Yang, Y., Pan, M., et al., Beck, H.E. (2026). Comprehensive global assessment of 24 gridded precipitation datasets across 18 428 catchments using hydrological modeling. <i>Hydrology and Earth System Sciences</i>, 30, 3399. <a href="https://doi.org/10.5194/hess-30-3399-2026">Read</a></li>
@@ -119,24 +117,9 @@ font-family:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;c
 <details>
 <summary>Earlier results, 2014&ndash;2018</summary>
 <div>
-<p>SM2RAIN has been applied to many satellite soil moisture products: ASCAT, QuikSCAT, RapidScat, AMSR-E, AMSR2, SMOS and SMAP (talks at <a href="https://www.researchgate.net/publication/308675440_Integration_of_GPM_and_satellite_soil_moisture_products_to_produce_a_single_superior_precipitation_dataset_in_Italy">IPWG 2016</a> and <a href="https://www.researchgate.net/publication/307557965_SM2RAIN_Merging_multiple_soil_moisture_products_for_improving_satellite_rainfall_estimation">SMAP 2016</a>). It was also applied to Sentinel-1 soil moisture over Italy at 1 km; the map below shows the mean annual rate.</p>
-<figure class="hn-figimg" style="margin:2rem 0 0"><a href="https://twitter.com/Hydrology_IRPI/status/883304058416771074"><img class="hn-img" src="https://hydrology.irpi.cnr.it/wp-content/uploads/2017/07/MeanDailyRainfall-1024x282.png" data-fallback="https://hydrology.irpi.cnr.it/wp-content/uploads/2017/07/MeanDailyRainfall-1024x282.png|http://hydrology.irpi.cnr.it/wp-content/uploads/2017/07/MeanDailyRainfall-1024x282.png" alt="Mean daily rainfall over Italy from SM2RAIN applied to Sentinel-1 soil moisture" width="1024" height="282" style="aspect-ratio:1024/282" loading="lazy" /></a></figure>
-<p style="margin-top:1rem">Other groups have used SM2RAIN in Mexico, on the Tibetan Plateau and globally. In August 2018 we counted 41 SM2RAIN-related papers (<a href="https://www.dropbox.com/s/3ujj8l05t3kvcsr/SM2RAINpapers_aug2018.pdf?dl=0">list, PDF</a>).</p>
+<p>SM2RAIN has been applied to many satellite soil moisture products: ASCAT, QuikSCAT, RapidScat, AMSR-E, AMSR2, SMOS and SMAP (talks at <a href="https://www.researchgate.net/publication/308675440_Integration_of_GPM_and_satellite_soil_moisture_products_to_produce_a_single_superior_precipitation_dataset_in_Italy">IPWG 2016</a> and <a href="https://www.researchgate.net/publication/307557965_SM2RAIN_Merging_multiple_soil_moisture_products_for_improving_satellite_rainfall_estimation">SMAP 2016</a>). It was also applied to Sentinel-1 soil moisture over Italy at 1 km.</p>
 </div>
 </details>
 </div>
-<script>
-(function(){
-  function next(im){
-    var list=(im.getAttribute('data-fallback')||'').split('|').filter(Boolean);
-    if(list.length){im.setAttribute('data-fallback',list.slice(1).join('|'));im.src=list[0];}
-    else{var f=im.closest('figure');if(f)f.style.display='none';}
-  }
-  document.querySelectorAll('.hn img.hn-img').forEach(function(im){
-    im.addEventListener('error',function(){next(im);});
-    if(im.complete&&im.naturalWidth===0)next(im);
-  });
-})();
-</script>
 </body>
 </html>

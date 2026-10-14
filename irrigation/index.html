@@ -69,7 +69,6 @@ font-family:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;c
 <p><strong>Choose the right soil moisture product.</strong> Model-based SMAP Level 4 soil moisture barely responds to irrigation and should not be used to detect it; observation-driven products are needed to see human water use.</p>
 </div>
 </section>
-<figure class="hn-figimg" style="margin:2rem 0 0"><img class="hn-img" src="https://hydrology.irpi.cnr.it/wp-content/uploads/2018/10/irrigation-700x457.jpg" data-fallback="https://hydrology.irpi.cnr.it/wp-content/uploads/2018/10/irrigation-700x457.jpg|http://hydrology.irpi.cnr.it/wp-content/uploads/2018/10/irrigation-700x457.jpg" alt="Irrigated agricultural field" width="700" height="457" style="aspect-ratio:700/457" loading="lazy" /></figure>
 <h2>From one idea to a European product</h2>
 <ol class="hn-tl">
 <li><span class="hn-yr">2018</span><p>First method, using coarse resolution satellite soil moisture, published in <i>JAG</i> and featured by <a href="https://www.esa.int/Our_Activities/Observing_the_Earth/SMOS/How_much_water_is_used_for_irrigation">ESA</a>. The idea &ldquo;SPACE-IRR: How much water for irrigation?&rdquo; won the <a href="https://www.copernicus-masters.com/winner/space-irr-how-much-water-for-irrigation/">BayWa Smart Farming Challenge</a> at the Copernicus Masters.</p></li>
@@ -89,7 +88,6 @@ font-family:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;c
 </tbody></table></div>
 <h2>Help us validate</h2>
 <p>Satellite estimates need ground truth, and farm-level irrigation records are scarce. We are part of a community effort to build the first open database of in-situ irrigation observations. If you hold irrigation volume or timing data, <a href="mailto:luca.brocca@cnr.it">get in touch</a>.</p>
-<figure class="hn-figimg" style="margin:2rem 0 0"><img class="hn-img" src="https://hydrology.irpi.cnr.it/wp-content/uploads/2018/10/Screen-Shot-2018-10-01-at-11.41.03-AM-700x261.png" data-fallback="https://hydrology.irpi.cnr.it/wp-content/uploads/2018/10/Screen-Shot-2018-10-01-at-11.41.03-AM-700x261.png|http://hydrology.irpi.cnr.it/wp-content/uploads/2018/10/Screen-Shot-2018-10-01-at-11.41.03-AM-700x261.png" alt="Early irrigation estimates from satellite soil moisture" width="700" height="261" style="aspect-ratio:700/261" loading="lazy" /></figure>
 <h2>Selected publications</h2>
 <ol class="hn-pubs" reversed>
 <li>Dari, J., Baljeet Singh, Y.K., Ntokas, K., Fomferra, N., &hellip;, <b>Brocca, L.</b>, et al. (2026). IWU-SMinv v1.0 and v1.1: Two satellite-based irrigation water use datasets at 1 km spatial resolution over Europe. Preprint, under revision at <i>Scientific Data</i>. <a href="https://doi.org/10.21203/rs.3.rs-10602968/v1">Preprint</a> &middot; <a href="https://zenodo.org/records/21473561">Data</a></li>
@@ -113,18 +111,5 @@ font-family:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;c
 </div>
 </details>
 </div>
-<script>
-(function(){
-  function next(im){
-    var list=(im.getAttribute('data-fallback')||'').split('|').filter(Boolean);
-    if(list.length){im.setAttribute('data-fallback',list.slice(1).join('|'));im.src=list[0];}
-    else{var f=im.closest('figure');if(f)f.style.display='none';}
-  }
-  document.querySelectorAll('.hn img.hn-img').forEach(function(im){
-    im.addEventListener('error',function(){next(im);});
-    if(im.complete&&im.naturalWidth===0)next(im);
-  });
-})();
-</script>
 </body>
 </html>
